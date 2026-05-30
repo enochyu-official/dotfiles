@@ -3,10 +3,6 @@ import = [
 #  "~/.config/alacritty/theme.toml"
 ]
 
-#[terminal.shell]
-#program = "/opt/homebrew/bin/tmux"
-#args = ["a", "-t", "default"]
-
 [font]
 normal        = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 bold          = { family = "JetBrainsMono Nerd Font", style = "Bold" }
@@ -24,4 +20,7 @@ save_to_clipboard = true
 key = "Space"
 mods = "Command|Shift"
 action = "ToggleViMode"
+
+[window]
+decorations = "Buttonless"
 

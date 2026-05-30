@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+CONFIG="$HOME/.config/sketchybar"
+PLUGIN="$CONFIG/plugins"
+ITEM="$CONFIG/items"
+
+source $CONFIG/colors.sh
+source $CONFIG/icons.sh
+
+##### Bar #####
+bar=(
+  position=top
+  height=37
+  blur_radius=30
+  sticky=off
+  padding_left=10
+  padding_right=10
+  color=$BAR_COLOR
+)
+sketchybar --bar "${bar[@]}"
+
+
+##### Defaults #####
+default=(
+  padding_left=5
+  padding_right=5
+  icon.padding_left=4
+  icon.padding_right=4
+  label.padding_left=4
+  label.padding_right=4
+  icon.font="JetBrainsMono Nerd Font:Bold:15.0"
+  icon.color=$WHITE
+  label.font="JetBrainsMono Nerd Font:Bold:15.0"
+  label.color=$WHITE
+  background.color=$ITEM_BG_COLOR
+  background.corner_radius=5
+  background.height=24
+)
+sketchybar --default "${default[@]}"
+
+
+##### Left Items #####
+sketchybar --add item apple left                    \
+           --set apple icon=$APPLE label.drawing=off
+source $ITEM/spaces.sh
+source $ITEM/front_app.sh
+
+##### Right Items #####
+source $ITEM/time.sh
+source $ITEM/battery.sh
+source $ITEM/cpu.sh
+
+##### Force all scripts to run the first time #####
+sketchybar --update
+
