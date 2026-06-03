@@ -11,6 +11,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Aliases
 alias ls="ls --color"
 alias la="ls -a"
+alias ll="ls -l"
 alias ta="tmux a -t"
 alias tad="tmux a -t default"
 alias tadd="tmux new-session -s default"

@@ -125,23 +125,6 @@ return {
   ),
 
   s(
-    { trig = "\\doc", snippetType = "autosnippet", wordTrig = false },
-    {
-      t({
-        "\\begin{document}",
-        "",
-        "",
-      }),
-      i(1),
-      t({
-        "",
-        "",
-        "\\end{document}",
-      }),
-    }
-  ),
-
-  s(
     { trig = "\\bf", snippetType = "autosnippet", wordTrig = false },
     {
       t("\\textbf{"), i(1), t("}"),
