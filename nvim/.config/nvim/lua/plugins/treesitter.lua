@@ -2,15 +2,12 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    branch = "master",
     lazy = false,
 
     config = function()
-      require("nvim-treesitter.configs").setup({
+      require("nvim-treesitter").setup({
         ensure_installed = {
           "lua",
-          "vim",
-          "vimdoc",
 
           "python",
           "toml",
@@ -29,10 +26,9 @@ return {
 
         auto_install = false,
         highlight = { enable = true },
-        indent = {
-	  enable = false,
-        },
+        indent = { enable = false },
       })
     end,
   },
 }
+
