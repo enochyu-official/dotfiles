@@ -5,6 +5,7 @@ local i  = ls.insert_node
 local rep = require("luasnip.extras").rep
 
 return {
+
   s({ trig = ";a", snippetType = "autosnippet", wordTrig = false }, t("\\alpha")),
   s({ trig = ";b", snippetType = "autosnippet", wordTrig = false }, t("\\beta")),
   s({ trig = ";g", snippetType = "autosnippet", wordTrig = false }, t("\\gamma")),
@@ -31,12 +32,15 @@ return {
   s(
     { trig = "\\beg", snippetType = "autosnippet", wordTrig = false },
     {
-      t("\\begin{"), i(1), t({"}", ""}),
+      t("\\begin{"),
+      r(1, i(1)),
+      t({ "}", "" }),
       i(2),
-      t({"", "\\end{"}), rep(1), t("}")
+      t({ "", "\\end{" }),
+      rep(1),
+      t("}"),
     }
   ),
-
   s(
     { trig = "\\ali", regTrig = false, wordTrig = false, snippetType = "autosnippet" },
     {
