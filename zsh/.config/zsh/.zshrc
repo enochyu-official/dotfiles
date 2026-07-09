@@ -21,7 +21,7 @@ alias da="deactivate"
 alias ml="cd ~/notes/2026/ml"
 alias lin="cd ~/notes/2026/linear-algebra"
 alias alg="cd ~/notes/2026/algebra"
-alias asdf="cd ~/notes/2026/memos && nvim landing.txt"
+alias asdf="cd ~/notes/2026/memos && nvim landing.md"
 
 
 # Functions
