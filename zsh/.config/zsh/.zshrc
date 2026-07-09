@@ -8,6 +8,7 @@ setopt PROMPT_SUBST
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias ls="ls --color"
+alias la="ls -a"
 alias ta="tmux a -t"
 alias tad="tmux a -t default"
 alias da="deactivate"
