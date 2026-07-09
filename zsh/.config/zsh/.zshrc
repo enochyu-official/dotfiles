@@ -12,10 +12,15 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 alias ls="ls --color"
 alias la="ls -a"
 alias ll="ls -l"
+
 alias ta="tmux a -t"
 alias tad="tmux a -t default"
 alias tadd="tmux new-session -s default"
 alias da="deactivate"
+
+alias ml="cd ~/notes/2026/ml"
+alias lin="cd ~/notes/2026/linear-algebra"
+alias alg="cd ~/notes/2026/algebra"
 
 
 # Functions
