@@ -108,19 +108,6 @@ return {
   ),
 
   s(
-    { trig = "\\sum", snippetType = "autosnippet", wordTrig = false },
-    {
-      t("\\sum_{"), i(1, "i=1"), t("}^{"), i(2, "n"), t("}"),
-    }
-  ),
-  s(
-    { trig = "\\int", snippetType = "autosnippet", wordTrig = false },
-    {
-      t("\\int_{"), i(1, "a"), t("}^{"), i(2, "b"), t("}"),
-    }
-  ),
-
-  s(
     { trig = "\\bf", snippetType = "autosnippet", wordTrig = false },
     {
       t("\\textbf{"), i(1), t("}"),

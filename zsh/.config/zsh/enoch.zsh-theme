@@ -8,7 +8,7 @@ parse_git_dirty() {
     SUBMODULE_SYNTAX="--ignore-submodules=dirty"
   fi
   if [[ -n $(git status -s ${SUBMODULE_SYNTAX}  2> /dev/null) ]]; then
-    echo "%{$fg[yellow]%}$(git rev-parse --abbrev-ref HEAD)"
+    echo "%{$fg[red]%}$(git rev-parse --abbrev-ref HEAD)"
   else
     echo "%{$fg[cyan]%}$(git rev-parse --abbrev-ref HEAD)"
   fi
