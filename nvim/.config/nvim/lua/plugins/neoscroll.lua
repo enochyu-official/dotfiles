@@ -18,6 +18,7 @@ return {
     performance_mode = false,
     ignored_events = {
       'WinScrolled', 'CursorMoved'
-    },
+    }
   }
 }
+

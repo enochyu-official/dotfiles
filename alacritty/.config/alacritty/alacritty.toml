@@ -1,6 +1,6 @@
 [general]
 import = [
-#  "~/.config/alacritty/theme.toml"
+  "~/.config/alacritty/theme.toml"
 ]
 
 [font]
@@ -22,5 +22,6 @@ mods = "Command|Shift"
 action = "ToggleViMode"
 
 [window]
+padding = { x = 8, y = 8 }
 decorations = "Buttonless"
 
