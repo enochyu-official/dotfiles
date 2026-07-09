@@ -19,3 +19,4 @@ vim.opt_local.softtabstop = 4
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 
+

@@ -15,4 +15,3 @@ export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonstartup"
 
 export EDITOR="nvim" 
 
-
