@@ -14,6 +14,7 @@ return {
   s({ trig = ";p", snippetType = "autosnippet", wordTrig = false }, t("\\pi")),
   s({ trig = ";t", snippetType = "autosnippet", wordTrig = false }, t("\\theta")),
   s({ trig = ";o", snippetType = "autosnippet", wordTrig = false }, t("\\omega")),
+  s({ trig = ";l", snippetType = "autosnippet", wordTrig = false }, t("\\lambda")),
 
   s({ trig = ";N", snippetType = "autosnippet", wordTrig = false }, t("\\mathbb{N}")),
   s({ trig = ";Z", snippetType = "autosnippet", wordTrig = false }, t("\\mathbb{Z}")),
@@ -104,11 +105,6 @@ return {
     {
       t("\\sqrt{"), i(1), t("}"),
     }
-  ),
-
-  s(
-    { trig = "\\ra", snippetType = "autosnippet", wordTrig = false },
-    t("\\rightarrow")
   ),
 
   s(
