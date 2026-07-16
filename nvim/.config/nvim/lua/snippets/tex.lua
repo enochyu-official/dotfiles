@@ -20,6 +20,9 @@ return {
   s({ trig = ";Z", snippetType = "autosnippet", wordTrig = false }, t("\\mathbb{Z}")),
   s({ trig = ";Q", snippetType = "autosnippet", wordTrig = false }, t("\\mathbb{Q}")),
   s({ trig = ";R", snippetType = "autosnippet", wordTrig = false }, t("\\mathbb{R}")),
+  s({ trig = ";S", snippetType = "autosnippet", wordTrig = false }, t("\\mathbb{S}")),
+  s({ trig = ";V", snippetType = "autosnippet", wordTrig = false }, t("\\mathbb{V}")),
+  s({ trig = ";M", snippetType = "autosnippet", wordTrig = false }, t("\\mathbb{M}")),
  
   s(
     { trig = "\\[", snippetType = "autosnippet", wordTrig = false },

@@ -9,9 +9,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 # Aliases
+alias vi="nvim"
+
 alias ls="ls --color"
 alias la="ls -a"
-alias ll="ls -l"
+alias ll="ls -al"
 
 alias ta="tmux a -t"
 alias tad="tmux a -t default"
